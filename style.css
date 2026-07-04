@@ -14,7 +14,7 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f5f5f5;
+    background:#000000b4;
 }
 
 /*=============== NAVBAR =============*/
@@ -956,6 +956,7 @@ body{
 }
 
 #headingText{
+  font-size: clamp(1rem, 5vw, 3rem);
   color: white;
   text-align: center;
   margin: 10px 0;
