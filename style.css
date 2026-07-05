@@ -17,6 +17,10 @@ body{
     background:#000000b4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*=============== NAVBAR =============*/
 
 .navbar {
@@ -926,18 +930,6 @@ body{
 
 /*=========== Review Section ============*/
 
-/* .reviews{
-  margin-top: 20px;
-  background-color: #00033b;
-  min-height: 400px;
-}
-
-.review1{
-  width: 
-  background-color: grey;
-  min-height: 100px;
-} */
-
 .reviewSection{
   padding-top: 10px;
   margin-top: 20px;
@@ -1015,3 +1007,112 @@ body{
 .avatarHeading{
   font-weight: 500;
 }
+
+/*========= Footer Section ==========*/
+
+.footer{
+  padding: 40px;
+  background-color: #1d1d29;
+  color: white;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.quickLinks{
+  display: flex;
+  flex-direction: column;
+}
+
+.support , .quickLinks{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.support h3 , .quickLinks h3{
+  margin-bottom: 10px 0;
+}
+
+.aboutVelora{
+  display: flex;
+  flex-direction:column;
+}
+
+.aboutVelora p{
+  line-height: 1.5;
+}
+
+.about-VeloraIcon{
+  width: 50px;
+  object-fit: cover;
+}
+
+#VeloraIcon{
+  width: 50px;
+  transition: 0.3s;
+}
+
+#VeloraIcon:hover{
+  transform: scale(1.2);
+}
+
+#VeloraIcon:active{
+  transform: scale(0.8);
+}
+
+.about-VeloraIcon{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.socioIcon{
+  color: white;
+  position: relative;
+  left: 5%;
+  scale: 1.3;
+  transition: 0.3s ease;
+  margin: 7px;
+}
+
+.socioIcon:hover{
+  transform: scale(1.5);
+}
+
+.socialIcons{
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .aboutVelora {
+        grid-column: 1 / 3;
+    }
+}
+
+.policies{
+  color: white;
+  background-color: #0e112bbc;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  font-size: clamp(0.6rem, 1.5vw, 1rem);
+}
+
+.policies a{
+  color: white;
+  text-decoration: none;
+}
+
